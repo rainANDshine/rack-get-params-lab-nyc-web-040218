@@ -43,7 +43,7 @@ class Application
   def handle_cart_search(search_term)
     if @@items.include?(search_term)
       @@cart << search_term
-      "added Figs"
+      "added #{search_term}"
     else
       "We don't have that item"
     end
